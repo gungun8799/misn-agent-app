@@ -1,0 +1,150 @@
+.agent-client-chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensure it takes the full height of the viewport */
+}
+
+.top-bar-fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140%;
+  padding: 10px;
+  background-color: #ffffff6b;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+}
+
+.agent-client-chat .top-bar-fixed .back-button-component .client-name-fixed {
+  margin-top: 20px; /* Fixed syntax error by adding px */
+}
+
+.client-name-fixed {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  padding-top: 60px; /* Add padding to account for the fixed top bar */
+  overflow-y: auto;
+}
+
+.chat-messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  overflow-y: auto;
+  margin-top: 20px;
+  padding-bottom: 150px; /* Add padding to avoid being hidden behind the chat-input and bottom bar */
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.chat-message.sent {
+  background-color: #D2E7E8;
+  align-self: flex-end;
+}
+
+.chat-message.received {
+  background-color: #ececec;
+  align-self: flex-start;
+}
+
+.chat-message p {
+  margin: 0;
+}
+
+.chat-message span {
+  display: block;
+  font-size: 0.8em;
+  color: #999;
+  margin-top: 5px;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  position: fixed;
+  bottom: 60px; /* Adjust to be above the bottom bar */
+  width: 95%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 1px;
+  margin-bottom: 5vw;
+}
+
+.chat-input button {
+  padding: 10px;
+  background-color: #118881;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 70px;
+}
+
+.chat-input button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .chat-input {
+    padding: 10px 10px;
+    margin-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .chat-input {
+    position: fixed;
+    padding: 10px 10px;
+    bottom: 1px; /* Adjust to be above the bottom bar */
+    width: 100%;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.agent-client-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

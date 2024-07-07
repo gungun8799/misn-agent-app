@@ -1,0 +1,86 @@
+.service-matching {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  }
+
+ 
+  .content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    padding-bottom: 100px; /* Ensure space for the fixed bottom bar */
+  }
+  
+  .applications-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+
+  h4 {
+    color: grey;
+  }
+  
+  .application-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 80vw;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .application-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .application-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .application-program {
+    font-size: 1em;
+    color: gray;
+  }
+  
+  .matched-services {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #17a2b8;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .service {
+    background-color: #a7ebcd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .service:hover {
+    background-color: #ffca2c;
+  }
+  
+  .bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

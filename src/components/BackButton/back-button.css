@@ -1,0 +1,14 @@
+.back-button-component {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #118881;
+    z-index: 100000;
+  }
+  
+  .back-icon-component {
+    margin-right: 5px;
+  }
+  

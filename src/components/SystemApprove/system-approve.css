@@ -1,0 +1,150 @@
+.system-approve {
+  padding: 20px;
+  height: 100vh; /* Ensure it takes the full height of the viewport */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: #f7f8fc;
+
+}
+
+.back-button-SP {
+  background: none;
+  border: none;
+  color: #118881;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.back-button-SP:hover {
+  text-decoration: underline;
+}
+
+.agent-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.agent-photo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.agent-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.system-approve h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+
+
+.filter-button {
+  
+  flex-direction: column;
+  padding: 10px 20px;
+  margin-left:20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  align-items: center;
+  width: 160px;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #8e44ad;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-buttons {
+ margin-left: 10px;
+}
+
+
+.filter-button.active,
+.filter-button:hover {
+  background-color: #8e44ad;
+  color: white;
+}
+
+.applications-list {
+  margin-bottom: 20px;
+}
+
+.application-id-header-title {
+  font-size: 13px;
+}
+
+.application-item-SP {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 310px;
+  margin-left:-19px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.application-item-SP:hover {
+  background-color: #f1f1f1;
+}
+
+.application-id-header {
+  font-size: 10px;
+  color: grey;
+}
+
+.application-item.rejected-SP {
+  background-color: #ffe5e5;
+}
+
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.application-header h3 {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.application-date {
+  font-size: 0.9em;
+  color: #999;
+}
+
+.application-program {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.application-reason {
+  color: #ff0000;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.application-summary {
+  color: #666;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2em;
+  color: #333;
+}

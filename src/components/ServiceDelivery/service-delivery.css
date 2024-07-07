@@ -1,0 +1,85 @@
+.service-delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.back-button-container {
+  margin-bottom: 20px;
+}
+
+.applications-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  height:100vh;
+  padding-bottom: 100px; /* Ensure space for the fixed bottom bar */
+}
+
+.service-delivery-title {
+  top: 50px;
+}
+
+.application-item-SD {
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 90px;
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.application-item:hover {
+  background-color: #f8f9fa;
+}
+
+.application-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.application-header h3 {
+  margin: 0;
+}
+
+.application-program {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.application-status-SD {
+  display: flex;
+  background-color: orange;
+  width: 200px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.matched-services {
+  margin-bottom: 10px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.service {
+  background-color: #118881;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.service:hover {
+  background-color: #0056b3;
+}

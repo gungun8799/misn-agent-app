@@ -1,0 +1,172 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #f7f8fc;
+  position: relative; /* Ensure the container positions its children correctly */
+}
+
+.dashboard {
+  width: 100%;
+  margin-top: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.pending-tasks,
+.service-issues-summary {
+  background-color: f7f8fc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 45px;
+  margin-top: -25px;
+}
+
+.pending-tasks h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.dashboard-title {
+  margin-left: -190px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.task-card {
+  display: flex;
+  flex-direction: row;
+  width: 120px;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-card:hover {
+  background-color: #f0f0f0;
+}
+
+.task-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #118881;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-count {
+  font-size: 30px;
+  font-weight: bold;
+  color: #15a097;
+  margin-bottom: 5px;
+}
+
+.task-name {
+  font-size: 14px;
+  color: #666;
+}
+
+.service-issues-summary {
+  display: flex;
+  flex-direction: column; /* Change flex direction to column */
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  width: 91.5%; /* Ensure it takes the full width */
+  height: 80px;
+}
+
+.issue-count {
+  font-size: 2.0em;
+  color: #994585; /* Adjust the color as needed */
+  display: flex;
+  font-weight: bold;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.issue-count i {
+  margin-right: 5px;
+}
+
+.issue-text {
+  font-size: 1em;
+  color: #333;
+  margin-top: 10px;
+}
+
+.logout-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #ff3b4c;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  z-index: 1000; /* Ensure the bottom bar stays on top */
+}
+
+.bottom-bar-button {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.bottom-bar-button:hover {
+  background-color: #f0f0f0;
+}

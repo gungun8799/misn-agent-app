@@ -1,0 +1,177 @@
+.detail-service-delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden; /* Prevent overflow issues */
+
+  }
+
+  .service-delivery-title {
+    margin-top: 20px;
+    margin-bottom: 1px;
+  }
+  
+  .content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    padding-bottom: 100px; /* Ensure space for the fixed bottom bar */
+  }
+  
+  .client-info-DSD-2 {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    color: 118881;
+    align-items: center;
+    width: 344px;
+    
+    border: solid 2px rgb(235, 235, 235);
+    margin-bottom: 20px;
+    margin-left:10px;
+    margin-top: 20px;
+    height: 70px;
+    border-radius: 10px;
+  }
+  
+  .client-photo img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  
+  .client-name-DSD {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left:20px;
+  }
+  
+  .basic-info, .service-request, .agent-service-submit-DSD {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    width: 300px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+  
+  .basic-info h3, .service-request h3, .agent-service-submit-DSD h3 {
+    margin-bottom: 10px;
+  }
+  
+  .service-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px 0;
+    background-color: #118881;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .service-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .agent-service-submit-DSD ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .agent-service-submit-DSD ul li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .action-buttons-DSD {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .chat-button {
+    background-color: #118881;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chat-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .confirm-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .popup-content h3 {
+    margin-top: 0;
+  }
+  
+  .popup-content textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+  }
+  
+  .popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .cancel-button, .confirm-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  .cancel-button {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .confirm-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #5a6268;
+  }
+  
+  .confirm-button:hover {
+    background-color: #0056b3;
+  }
+  

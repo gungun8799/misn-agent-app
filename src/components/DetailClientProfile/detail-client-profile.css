@@ -1,0 +1,227 @@
+.detail-client-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 85vh; /* Full viewport height */
+  overflow: hidden; /* Prevent the whole page from scrolling */
+}
+
+.client-detail {
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.client-name-DCP {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profile-card-DCP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #edebeb;
+  border-radius: 10px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.client-id {
+  margin-top: 1px;
+  color: #888;
+}
+
+.call-button {
+  background-color: #118881;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.call-button:hover {
+  background-color: #0056b3;
+}
+
+.basic-info-card-DCP {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-card-DCP {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.basic-info-card-DCP h3 {
+  margin-bottom: 10px;
+}
+
+.request-status-DCP {
+  font-weight: bold;
+  color: #118881;
+  margin-bottom: -12px;
+}
+
+.doc-button-DCP,
+.record-button-DCP {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  margin: 5px 0;
+  background-color: #bce4e1;
+  color: #118881;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.doc-button:hover,
+.record-button:hover {
+  background-color: #0056b3;
+}
+
+.historical-services {
+  display: flex;
+  flex-direction: column;
+}
+
+.request-summary-DCP {
+  margin-top: 1px;
+}
+
+.service-item-DCP {
+  padding: 10px;
+  height: 90px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.service-item-DCP button {
+  padding: 5px 10px;
+  background-color: #118881;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.service-item-DCP button:hover {
+  background-color: #0056b3;
+}
+
+.schedule-visit-button-DCP {
+  padding: 5px 10px;
+  background-color: #118881;
+  color: white;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 160px;
+}
+
+.schedule-visit-button:hover {
+  background-color: #0056b3;
+}
+
+.chat-button-DCP {
+  padding: 5px 10px;
+  background-color: #118881;
+  width: 160px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 3px;
+  height: 50px;
+}
+
+.chat-button-DCP:hover {
+  background-color: #0056b3;
+}
+
+.docs-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.popup-content h3 {
+  margin-bottom: 20px;
+}
+
+.popup-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-content li {
+  margin-bottom: 10px;
+}
+
+.popup-content a {
+  color: #118881;
+  text-decoration: none;
+}
+
+.popup-content a:hover {
+  text-decoration: underline;
+}
+
+.close-button {
+  padding: 10px 20px;
+  background-color: #118881;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #0056b3;
+}
+
+html {
+  height: 100%;
+}

@@ -1,0 +1,31 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: -20px;
+  width: 110%;
+  height: 60px; /* Adjusted height to match the image */
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.misn-logo {
+  height: 60px; /* Adjusted height to match the image */
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.agent-photo {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
